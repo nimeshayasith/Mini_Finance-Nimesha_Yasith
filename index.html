@@ -578,34 +578,31 @@ Bootstrap 5 Dashboard Admin Template
                         </div>
                     </div>
 
-<!-- <footer class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-12 text-center">
-                <p class="footer-text">
-                    Mini Finance v1.0 — Deployed on 05 Sep 2025 — By Nimesha Yasith
-                </p>
-            </div>
-        </div>
-    </div>
-</footer> -->
-
-
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-12 text-center">
+                                    <p id="deploy-footer" class="footer-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
 
                 </main>
-
             </div>
         </div>
-<p id="deploy-footer" class="footer-text"></p>
 
-<script>
-  const today = new Date();
-  const dateOptions = { day: '2-digit', month: 'short', year: 'numeric' };
-  const formattedDate = today.toLocaleDateString('en-US', dateOptions);
+        <!-- JavaScript to generate dynamic footer -->
+        <script>
+          const today = new Date();
+          const dateOptions = { day: '2-digit', month: 'short', year: 'numeric' };
+          const formattedDate = today.toLocaleDateString('en-US', dateOptions);
 
-  document.getElementById("deploy-footer").textContent =
-    `Mini Finance v1.0 — Deployed on ${formattedDate} — By Nimesha Yasith`;
-</script>
+          // Replace 'Your Name' with your actual name
+          document.getElementById("deploy-footer").textContent =
+            `Mini Finance v1.0 — Deployed on ${formattedDate} — By Your Name`;
+        </script>
+
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>

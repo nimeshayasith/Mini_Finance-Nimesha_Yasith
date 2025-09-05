@@ -899,12 +899,50 @@ strong {
   border-color: var(--secondary-color);
 }
 
-.footer-text {
-    font-size: 14px;
-    color: #6c757d; /* muted but readable */
-    margin: 10px 0;
-}
+/*---------------------------------------
+          FOOTER STYLES              
+        -----------------------------------------*/
+        .site-footer {
+          background: var(--white-color);
+          border-top: 1px solid var(--border-color);
+          padding: 20px;
+          margin-top: 40px;
+        }
 
+        .footer-text {
+          font-size: 14px;
+          color: #6c757d;
+          margin: 0;
+          text-align: center;
+          font-family: var(--body-font-family);
+          font-weight: var(--font-weight-normal);
+        }
+
+        
+        /*---------------------------------------
+          RESPONSIVE STYLES               
+        -----------------------------------------*/
+        @media screen and (max-width: 767px) {
+          #sidebarMenu {
+            top: 60px;
+          }
+
+          .sidebar-sticky {
+            top: 117px;
+            height: calc(100vh - 117px);
+          }
+
+          .footer-text {
+            font-size: 12px;
+            padding: 0 10px;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          .footer-text {
+            font-size: 11px;
+          }
+        }
 
 /*---------------------------------------
   CUSTOM FORM               
