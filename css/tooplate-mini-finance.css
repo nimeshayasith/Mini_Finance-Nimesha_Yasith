@@ -899,6 +899,12 @@ strong {
   border-color: var(--secondary-color);
 }
 
+.footer-text {
+    font-size: 14px;
+    color: #6c757d; /* muted but readable */
+    margin: 10px 0;
+}
+
 
 /*---------------------------------------
   CUSTOM FORM               

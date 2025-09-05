@@ -589,10 +589,23 @@ Bootstrap 5 Dashboard Admin Template
         </div>
     </div>
 </footer>
+
+
+
                 </main>
 
             </div>
         </div>
+<p id="deploy-footer" class="footer-text"></p>
+
+<script>
+  const today = new Date();
+  const dateOptions = { day: '2-digit', month: 'short', year: 'numeric' };
+  const formattedDate = today.toLocaleDateString('en-US', dateOptions);
+
+  document.getElementById("deploy-footer").textContent =
+    `Mini Finance v1.0 — Deployed on ${formattedDate} — By Nimesha Yasith`;
+</script>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
