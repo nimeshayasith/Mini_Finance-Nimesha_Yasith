@@ -594,13 +594,14 @@ Bootstrap 5 Dashboard Admin Template
 
         <!-- JavaScript to generate dynamic footer -->
         <script>
+            const commitHash = "commit f0416aaa1b2cf6f27d";
           const today = new Date();
           const dateOptions = { day: '2-digit', month: 'short', year: 'numeric' };
           const formattedDate = today.toLocaleDateString('en-US', dateOptions);
 
           // Replace 'Your Name' with your actual name
           document.getElementById("deploy-footer").textContent =
-            `Mini Finance v1.0 — Deployed on ${formattedDate} — By Nimesha Yasith`;
+            `Mini Finance v1.0 — Deployed on ${formattedDate} — By Nimesha Yasith— rev: ${commitHash}`;
         </script>
 
 
